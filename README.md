@@ -1,7 +1,7 @@
 # Apriori
 Apriori implementation using uthash table for best performance.
 
-Used libraries:
+Used library:
 
 https://github.com/troydhanson/uthash - for best performance.
 uthash library is already included(uthash.h header file).
