@@ -6,6 +6,8 @@ The Apriori algorithm was proposed by Agrawal and Srikant in 1994. Apriori is de
 Apriori uses a "bottom up" approach, where frequent subsets are extended one item at a time (a step known as candidate generation), and groups of candidates are tested against the data. The algorithm terminates when no further successful extensions are found.
 Apriori uses breadth-first search and a Hash tree structure to count candidate item sets efficiently. It generates candidate item sets of length k from item sets of length k-1. Then it prunes the candidates which have an infrequent sub pattern. According to the downward closure lemma, the candidate set contains all frequent k-length item sets. After that, it scans the transaction database to determine frequent item sets among the candidates.
 
+Association rules analysis is a technique to uncover how items are associated to each other. There are three common ways to measure association.
+
 Measure 1: Support. This says how popular an itemset is, as measured by the proportion of transactions in which an itemset appears.
 
            support{x} = (transactions containing x) / (total number of transactions)
