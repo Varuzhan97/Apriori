@@ -8,14 +8,20 @@ Apriori uses breadth-first search and a Hash tree structure to count candidate i
 
 Measure 1: Support. This says how popular an itemset is, as measured by the proportion of transactions in which an itemset appears.
 
+           support{x} = (transactions containing x) / (total number of transactions)
+
 Measure 2: Confidence. This says how likely item Y is purchased when item X is purchased, expressed as {X -> Y}. This is measured by the proportion of transactions with item X, in which item Y also appears.
 
+           confidence{x->y} = (support{x,y}) / (support{x})
+
 Measure 3: Lift. This says how likely item Y is purchased when item X is purchased, while controlling for how popular item Y is.
+
+           lift{x->y} = (support{x,y}) / (support{x} X support{y})
 
 Used library for best performance: https://github.com/troydhanson/uthash.
 
 Compile syntax: g++ apriori.cpp -o a.out.
 
-Output of algorithm is output.csv file, which contains itemsets with minimum suppurt, confidence, lift.
+Output of algorithm is "output.csv" file, which contains itemsets with minimum suppurt, confidence, lift.
 
-config.cfg file is for input and process configurations(minimum support, minimum confidence, database name).
+"config.cfg" file is for input and process configurations(minimum support, minimum confidence, database name).
