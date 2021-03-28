@@ -1,9 +1,7 @@
-#include <string.h>
 #include <iostream>
-using namespace std;
 #include <fstream>
 #include <algorithm>
-
+using namespace std;
 
 namespace configurations
 {
