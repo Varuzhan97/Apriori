@@ -8,9 +8,15 @@
 #include <assert.h>
 #include <unistd.h>
 
+#include <iostream>
+#include <algorithm>
+#include <fstream>
+
 #include "config.h"
 
 #define MAX_CHAR 5
+
+using namespace std;
 
 namespace mmap_file
 {
